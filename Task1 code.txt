@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Landing Page</title>
+</head>
+<style>
+    /* Add styles for the new sections */
+.signup, .contact {
+    width: 80%;
+    margin-bottom: 2em;
+}
+
+.signup form, .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup label, .signup input, .contact label, .contact input {
+    margin-bottom: 1em;
+}
+/* Update styles for the features section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Rest of your existing styles */
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: 30%; /* Adjust the width as needed */
+    text-align: center;
+    margin-bottom: 1em;
+    border: 1px solid #ccc; /* Border color */
+    padding: 1em; /* Padding inside the box */
+}
+
+/* Add styles for the feature descriptions */
+.feature p {
+    margin: 0; /* Remove default paragraph margin */
+}
+
+</style>
+<body>
+    <main>
+        <section class="intro">
+            <h2>Welcome to our Website!</h2>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <h3>java</h3>
+                <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+            </div>
+            <div class="feature">
+                <h3>python</h3>
+                <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.</p>
+            </div>
+            <div class="feature">
+                <h3>C</h3>
+                <p>C is an imperative procedural language, supporting structured programming, lexical variable scope, and recursion, with a static type system. It was designed to be compiled to provide low-level access to memory and language constructs that map efficiently to machine instructions, all with minimal runtime support.</p>
+            </div>
+        </section>
+        <section class="signup">
+            <h2>Sign Up Now!</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" value="Sign Up">
+            </form>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="contactName">Name:</label>
+                <input type="text" id="contactName" name="contactName" required>
+                <label for="contactEmail">Email:</label>
+                <input type="email" id="contactEmail" name="contactEmail" required>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Landing Page</p>
+    </footer>
+</body>
+</html>
